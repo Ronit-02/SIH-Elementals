@@ -1,11 +1,7 @@
 # SIH-Elementals
-- Introduction 
 
-Waste management has become a critical issue in urban and rural areas alike. Rapid population growth and urbanization have led to an increase in waste generation, which poses significant environmental and health challenges. Traditional waste disposal methods are no longer sustainable, and there is a pressing need for innovative solutions to manage waste effectively.
-
-Our project stems from the realization that existing waste management systems often lack efficiency, transparency, and accessibility. In many places, waste collectors struggle to find waste sources, while residents find it challenging to dispose of their waste responsibly. This project aims to bridge these gaps by creating an integrated waste management system that connects waste generators, waste collectors, and municipal authorities.
-
-A study featured in the Journal of Urban Management (December 2021) reports that the 62 MT of waste generated annually includes 7.9 MT of hazardous waste, 5.6 MT of plastic waste, 1.5 MT of e-waste, and 0.17 MT of biomedical waste. The Indian Central Pollution Control Board (CPCB) recently projected that annual waste generation in India will increase to 165 MT by 2030. Hazardous, plastic, e-waste, and bio-medical waste generated is expected to increase proportionately, as well. 
+# Problem Statement 
+  Waste Management
 
 # Solution
 
