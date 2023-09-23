@@ -1,7 +1,7 @@
 # SIH-Elementals
 
 # Problem Statement 
-  Waste Management
+  In today's consumer-driven society, there is a pressing issue of excessive waste generation due to the disposal of functional items. Simultaneously, people often struggle to access affordable goods. Bridging this gap is essential to reduce waste and promote affordability, making it imperative to establish an efficient platform for buying and selling second-hand items
 
 # Solution
 
