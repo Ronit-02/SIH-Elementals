@@ -1,0 +1,81 @@
+.navbar {
+    position: relative;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    /* border-bottom: 5px solid var(--color--GREEN-500); */
+    padding: 40px 50px;
+}
+
+.nav-logo {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.8rem;
+    flex-grow: 1;
+    color: black;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-item {
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.nav-item-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-item:after, .dropdown-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after, .dropdown-item:hover:after {
+    width: 100%;
+    background: var(--color--GREEN-500);
+}
+
+.nav-item .active {
+    color: black;
+    padding: 9px 0;
+    border-bottom: 4px solid var(--color--GREEN-500);
+}
+
+.nav-item .non-active {
+    color: black;
+}
+
+.dropdown {
+    position: absolute;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 4px 4px 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-size: 1rem;
+    color: black;
+}

@@ -1,0 +1,160 @@
+.headerParentDiv {
+  padding: 10px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.mainheading {
+  margin: 10px;
+  font-size: 2.5rem;
+}
+
+.subHeading {
+  margin: 20px;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.productSearch {
+  width: 35em;
+  height: 48px;
+  border: 2px solid var(--color--GREEN-500);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productSearch .input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.productSearch .input input {
+  border-color: transparent;
+  outline-color: transparent;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.productSearch .searchAction {
+  min-width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background-color: var(--color--GREEN-500);
+  border-radius: 0 4px 4px 0;
+}
+
+.productSearch .searchAction svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
+
+
+.span {
+  text-decoration: none;
+  font-size: 16px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.categories {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.categoryImage {
+  width: 70px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .placeSearch,
+  .productSearch,
+  .sellMenu {
+    display: none;
+  }
+}
+
+.buyers-heading {
+  margin: 80px 0px 100px 250px;
+}
+
+.buyers-heading h1 {
+  width: 300px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid var(--color--GREEN-400);
+}
+
+.buyers {
+  width: 80vw;
+  margin: 30px auto 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.buyers-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.buyers-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.buyers-desc {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buyers-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.buyers-place {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.buyers-categories {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.buyers-categories li {
+  background-color: var(--color--GREEN-600);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}

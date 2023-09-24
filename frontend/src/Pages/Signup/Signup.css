@@ -1,0 +1,131 @@
+.signup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.signup-left {
+    width: 40%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.signup-heading {
+    font-size: 2.5rem;
+    padding: 40px;
+    color: var(--color--GREEN-600);
+}
+
+.signup-title {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.signup-category {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.category {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color--CHARCOAL-400);
+    border: 1px solid var(--color--CHARCOAL-400);
+}
+
+.category:hover, .active-cat {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    background-color: var(--color--GREEN-600);
+    border: none;
+}
+
+.category-fill {
+    color: white;
+    background-color: var(--color--GREEN-600);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-label {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.form-input {
+    width: 250px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=number] {
+    border: 1px solid var(--color--CHARCOAL-400);
+    border-radius: 10px;
+  }
+
+.form-button {
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    color: var(--color--GREEN-600);
+    background-color: white;
+    border: 2px solid var(--color--GREEN-600);
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.form-button:hover {
+    color: white;
+    background-color: var(--color--GREEN-600);
+}
+
+.signup-right {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.signup-img1 {
+    width: 40rem;
+    margin-right: 0;
+    position: absolute;
+    right: 20%;
+    bottom: 100px;
+    z-index: 2;
+}
+
+.signup-img2 {
+    width: 55rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
