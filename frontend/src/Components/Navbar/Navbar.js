@@ -52,7 +52,7 @@ export default function NavBar() {
 
                                 {isHovering2 && 
                                     <div className="dropdown">
-                                        <NavLink className="dropdown-item" to="/service1" >Reclycle your item</NavLink>
+                                        <NavLink className="dropdown-item" to="/service1" >Recycle your item</NavLink>
                                         <NavLink className="dropdown-item" to="/service2" >Request garbage collection</NavLink>
                                         <NavLink className="dropdown-item" to="/service3" >Accept collection requests</NavLink>
                                     </div>

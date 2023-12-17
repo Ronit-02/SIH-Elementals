@@ -7,11 +7,11 @@ import Ground from '../../Images/ground.svg';
 function Signup() {
 
     const [inputs, setInputs] = useState({});
-    const [user, setUser] = useState("");
+    // const [userType, setUserType] = useState("");
 
-    const handleClick = (val) => {
-        setUser(val);
-        console.log(user)
+    const categorySelect = (e, type) => {
+        document.querySelector('.active-cat').classList.remove('active-cat')
+        e.target.className = 'category active-cat'
     };
 
     const handleChange = (event) => {
@@ -28,7 +28,12 @@ function Signup() {
     return (
         <div className='signup'>
 
-            <div className="signup-left">
+            <div className='signup-left'>
+                <img className='signup-img1' src={Collector} alt="garbage-collection-process" />
+                <img className='signup-img2' src={Ground} alt="ground" />
+            </div>
+
+            <div className="signup-right">
 
                 <h1 className='signup-heading'>Register Now</h1>
 
@@ -37,15 +42,14 @@ function Signup() {
                     <h2 className='signup-title'>Who are you?</h2>
 
                     <div className="signup-category">
-                        <div className='category' onClick={() => handleClick("seller")} >Seller</div>
-                        <div className='category' onClick={() => handleClick("gc")} >Garbage Collector</div>
-                        <div className='category' onClick={() => handleClick("govt")} >Municipal Officer</div>
+                        <div className='category active-cat' onClick={(e) => categorySelect(e, "seller")} >Seller</div>
+                        <div className='category' onClick={(e) => categorySelect(e)} >Garbage Collector</div>
+                        <div className='category' onClick={(e) => categorySelect(e)} >Municipal Officer</div>
                     </div>
 
                     <h2 className="signup-title">Provide your details</h2>
 
                     <form className="signup-form" onSubmit={handleSubmit}>
-                        {/* <label className='form-label'>Enter your name:</label> */}
                         <input
                             className='form-input'
                             placeholder='name'
@@ -54,7 +58,6 @@ function Signup() {
                             value={inputs.username || ""}
                             onChange={handleChange}
                             />
-                        {/* <label className='form-label'>Enter your age:</label> */}
                         <input
                             className='form-input'
                             placeholder='age'
@@ -67,11 +70,6 @@ function Signup() {
                     </form>
 
                 </div>
-            </div>
-
-            <div className='signup-right'>
-                <img className='signup-img1' src={Collector} alt="garbage-collection-process" />
-                <img className='signup-img2' src={Ground} alt="ground" />
             </div>
 
         </div>
